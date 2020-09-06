@@ -49,11 +49,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 298);
+            this.label1.Location = new System.Drawing.Point(111, 298);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Login";
+            this.label1.Text = "Usuário";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxPass
@@ -62,6 +62,7 @@
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.Size = new System.Drawing.Size(150, 20);
             this.textBoxPass.TabIndex = 0;
+            this.textBoxPass.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -75,12 +76,13 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(112, 117);
+            this.buttonLogin.Location = new System.Drawing.Point(112, 116);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 2;
             this.buttonLogin.Text = "Entrar";
             this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // pictureBox1
             // 
@@ -114,6 +116,7 @@
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
