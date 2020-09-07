@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExcluirCliente = new System.Windows.Forms.Button();
-            this.buttonCancelarCliente = new System.Windows.Forms.Button();
             this.buttonEditarCliente = new System.Windows.Forms.Button();
             this.buttonNovoCliente = new System.Windows.Forms.Button();
             this.textBoxContato = new System.Windows.Forms.TextBox();
@@ -56,7 +55,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.buttonExcluirCliente);
-            this.panel1.Controls.Add(this.buttonCancelarCliente);
             this.panel1.Controls.Add(this.buttonEditarCliente);
             this.panel1.Controls.Add(this.buttonNovoCliente);
             this.panel1.Controls.Add(this.textBoxContato);
@@ -81,7 +79,7 @@
             // 
             // buttonExcluirCliente
             // 
-            this.buttonExcluirCliente.Location = new System.Drawing.Point(501, 259);
+            this.buttonExcluirCliente.Location = new System.Drawing.Point(442, 259);
             this.buttonExcluirCliente.Name = "buttonExcluirCliente";
             this.buttonExcluirCliente.Size = new System.Drawing.Size(75, 23);
             this.buttonExcluirCliente.TabIndex = 4;
@@ -89,18 +87,9 @@
             this.buttonExcluirCliente.UseVisualStyleBackColor = true;
             this.buttonExcluirCliente.Click += new System.EventHandler(this.buttonExcluirCliente_Click);
             // 
-            // buttonCancelarCliente
-            // 
-            this.buttonCancelarCliente.Location = new System.Drawing.Point(405, 259);
-            this.buttonCancelarCliente.Name = "buttonCancelarCliente";
-            this.buttonCancelarCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelarCliente.TabIndex = 4;
-            this.buttonCancelarCliente.Text = "Cancelar";
-            this.buttonCancelarCliente.UseVisualStyleBackColor = true;
-            // 
             // buttonEditarCliente
             // 
-            this.buttonEditarCliente.Location = new System.Drawing.Point(308, 259);
+            this.buttonEditarCliente.Location = new System.Drawing.Point(342, 259);
             this.buttonEditarCliente.Name = "buttonEditarCliente";
             this.buttonEditarCliente.Size = new System.Drawing.Size(75, 23);
             this.buttonEditarCliente.TabIndex = 4;
@@ -110,7 +99,7 @@
             // 
             // buttonNovoCliente
             // 
-            this.buttonNovoCliente.Location = new System.Drawing.Point(210, 259);
+            this.buttonNovoCliente.Location = new System.Drawing.Point(237, 259);
             this.buttonNovoCliente.Name = "buttonNovoCliente";
             this.buttonNovoCliente.Size = new System.Drawing.Size(75, 23);
             this.buttonNovoCliente.TabIndex = 4;
@@ -147,7 +136,6 @@
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Contato:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -210,7 +198,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(626, 150);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel2
             // 
@@ -231,7 +218,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Gerenciador de Clientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -275,7 +261,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonExcluirCliente;
-        private System.Windows.Forms.Button buttonCancelarCliente;
         private System.Windows.Forms.Button buttonEditarCliente;
         private System.Windows.Forms.Button buttonNovoCliente;
         private System.Windows.Forms.TextBox textBoxDataNascimento;

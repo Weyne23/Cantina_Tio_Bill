@@ -67,6 +67,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="model\Cliente.cs" />
+    <Compile Include="model\Produto.cs" />
     <Compile Include="PedidosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdutosForm.resx">
+      <DependentUpon>ProdutosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -55,8 +55,6 @@ namespace ProjQuentinhas.model
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-
-
             return table;
         }
 

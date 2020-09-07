@@ -27,17 +27,7 @@ namespace ProjQuentinhas
             textBoxContato.Text = "";
             textBoxDataNascimento.Text = "";
             textBoxEndereco.Text = "";
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         private void buttonNovoCliente_Click(object sender, EventArgs e)
         {
@@ -76,14 +66,7 @@ namespace ProjQuentinhas
         private void ClientesForm_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = cliente.listarClientes();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-
-
-        }
+        }     
 
         private void buttonEditarCliente_Click(object sender, EventArgs e)
         {
