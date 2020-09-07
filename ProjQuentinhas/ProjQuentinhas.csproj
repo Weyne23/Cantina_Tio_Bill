@@ -82,6 +82,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quentinha_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quentinha_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RelatorioForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosForm.resx">
+      <DependentUpon>PedidosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProdutosForm.resx">
       <DependentUpon>ProdutosForm.cs</DependentUpon>
@@ -119,6 +127,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="quentinha_dbDataSet.xsc">
+      <DependentUpon>quentinha_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="quentinha_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quentinha_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quentinha_dbDataSet.xss">
+      <DependentUpon>quentinha_dbDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

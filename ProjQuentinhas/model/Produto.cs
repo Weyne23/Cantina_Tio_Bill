@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,22 @@ namespace ProjQuentinhas.model
 {
     class Produto
     {
+               
+        public string Nome { get; set; }
+        public double Valor { get; set; }        
+        
+
+        public Produto ()
+        {
+
+        }
+
+        public Produto(string nome, double valor)
+        {            
+            Nome = nome;
+            Valor = valor;   
+        }
+
         CONNECT conn = new CONNECT();
 
         // Funcão inserir um novo Produto
@@ -110,6 +127,15 @@ namespace ProjQuentinhas.model
                 conn.closeConnection();
                 return false;
             }
+        }
+
+        public override string ToString()
+        {
+            return Nome
+                + " - "
+                + " - R$ "
+                + Valor.ToString("F2", CultureInfo.InvariantCulture);
+                
         }
 
     }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,25 @@ namespace ProjQuentinhas.model
 {
     class Cliente
     {
+
+        public string Nome { get; set; }
+        public int Id { get; private set; }
+        public string Cpf { get; set; }
+        public string Contato { get; set; }
+
+        public Cliente()
+        {
+
+        }
+
+        public Cliente(string nome, int id, string cpf, string contato)
+        {
+            Nome = nome;
+            Id = id;
+            Cpf = cpf;
+            Contato = contato;
+        }
+
         CONNECT conn = new CONNECT();
 
         // Funcão inserir um novo cliente
@@ -49,6 +69,22 @@ namespace ProjQuentinhas.model
         public DataTable listarClientes()
         {
             MySqlCommand command = new MySqlCommand("SELECT * FROM `cliente`", conn.getConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table;
+        }
+
+
+        public DataTable listarClientesPorNome(string nome)
+        {
+            string buscarQuery = "SELECT `id`, `nome`, `cpf`, `contato` FROM `cliente` WHERE `nome` LIKE '%"+nome+"%'";
+
+            MySqlCommand command = new MySqlCommand(buscarQuery, conn.getConnection());
+            
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DataTable table = new DataTable();
 
