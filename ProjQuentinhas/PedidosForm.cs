@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjQuentinhas
 {
-    public partial class Pedidos : Form
+    public partial class PedidosForm : Form
     {
-        public Pedidos()
+        public PedidosForm()
         {
             InitializeComponent();
         }
