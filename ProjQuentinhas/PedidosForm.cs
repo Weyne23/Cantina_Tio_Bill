@@ -30,7 +30,8 @@ namespace ProjQuentinhas
         {
             // TODO: esta linha de código carrega dados na tabela 'quentinha_dbDataSet.cliente'. Você pode movê-la ou removê-la conforme necessário.
             this.clienteTableAdapter.Fill(this.quentinha_dbDataSet.cliente);
-            dataGridViewProdutos.DataSource = produto.listarProdutos();
+            dataGridViewProdutos.DataSource = produto.listarProdutos();            
+            dataGridViewCliente.DataSource = cliente.listarClientes();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -83,6 +84,11 @@ namespace ProjQuentinhas
         }
 
         private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

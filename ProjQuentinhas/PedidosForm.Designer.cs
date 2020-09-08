@@ -147,6 +147,7 @@
             this.dataGridViewCliente.Size = new System.Drawing.Size(366, 150);
             this.dataGridViewCliente.TabIndex = 39;
             this.dataGridViewCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridViewCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCliente_CellContentClick);
             // 
             // label4
             // 
