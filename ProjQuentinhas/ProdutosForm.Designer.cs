@@ -51,7 +51,7 @@
             this.buttonExcluirProduto.Location = new System.Drawing.Point(456, 224);
             this.buttonExcluirProduto.Name = "buttonExcluirProduto";
             this.buttonExcluirProduto.Size = new System.Drawing.Size(75, 23);
-            this.buttonExcluirProduto.TabIndex = 18;
+            this.buttonExcluirProduto.TabIndex = 6;
             this.buttonExcluirProduto.Text = "Excluir";
             this.buttonExcluirProduto.UseVisualStyleBackColor = true;
             this.buttonExcluirProduto.Click += new System.EventHandler(this.buttonExcluirProduto_Click);
@@ -61,7 +61,7 @@
             this.buttonEditarProduto.Location = new System.Drawing.Point(356, 224);
             this.buttonEditarProduto.Name = "buttonEditarProduto";
             this.buttonEditarProduto.Size = new System.Drawing.Size(75, 23);
-            this.buttonEditarProduto.TabIndex = 19;
+            this.buttonEditarProduto.TabIndex = 5;
             this.buttonEditarProduto.Text = "Editar";
             this.buttonEditarProduto.UseVisualStyleBackColor = true;
             this.buttonEditarProduto.Click += new System.EventHandler(this.buttonEditarProduto_Click);
@@ -71,7 +71,7 @@
             this.buttonNovoProduto.Location = new System.Drawing.Point(251, 224);
             this.buttonNovoProduto.Name = "buttonNovoProduto";
             this.buttonNovoProduto.Size = new System.Drawing.Size(75, 23);
-            this.buttonNovoProduto.TabIndex = 20;
+            this.buttonNovoProduto.TabIndex = 4;
             this.buttonNovoProduto.Text = "Novo";
             this.buttonNovoProduto.UseVisualStyleBackColor = true;
             this.buttonNovoProduto.Click += new System.EventHandler(this.buttonNovoProduto_Click);
@@ -81,7 +81,7 @@
             this.textBoxProdutoPreco.Location = new System.Drawing.Point(243, 157);
             this.textBoxProdutoPreco.Name = "textBoxProdutoPreco";
             this.textBoxProdutoPreco.Size = new System.Drawing.Size(142, 20);
-            this.textBoxProdutoPreco.TabIndex = 12;
+            this.textBoxProdutoPreco.TabIndex = 3;
             // 
             // label2
             // 
@@ -97,7 +97,7 @@
             this.textBoxProdutoComponente.Location = new System.Drawing.Point(243, 131);
             this.textBoxProdutoComponente.Name = "textBoxProdutoComponente";
             this.textBoxProdutoComponente.Size = new System.Drawing.Size(142, 20);
-            this.textBoxProdutoComponente.TabIndex = 15;
+            this.textBoxProdutoComponente.TabIndex = 2;
             // 
             // textBoxProdutoId
             // 
@@ -112,7 +112,7 @@
             this.textBoxProdutoNome.Location = new System.Drawing.Point(243, 105);
             this.textBoxProdutoNome.Name = "textBoxProdutoNome";
             this.textBoxProdutoNome.Size = new System.Drawing.Size(249, 20);
-            this.textBoxProdutoNome.TabIndex = 17;
+            this.textBoxProdutoNome.TabIndex = 1;
             // 
             // label_cpf
             // 

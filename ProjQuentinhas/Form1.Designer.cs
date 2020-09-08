@@ -61,7 +61,7 @@
             this.textBoxPass.Location = new System.Drawing.Point(113, 73);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.Size = new System.Drawing.Size(150, 20);
-            this.textBoxPass.TabIndex = 0;
+            this.textBoxPass.TabIndex = 1;
             this.textBoxPass.UseSystemPasswordChar = true;
             // 
             // label2

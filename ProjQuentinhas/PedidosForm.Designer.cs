@@ -124,7 +124,7 @@
             this.textBoxBuscarCliente.Location = new System.Drawing.Point(530, 104);
             this.textBoxBuscarCliente.Name = "textBoxBuscarCliente";
             this.textBoxBuscarCliente.Size = new System.Drawing.Size(134, 20);
-            this.textBoxBuscarCliente.TabIndex = 37;
+            this.textBoxBuscarCliente.TabIndex = 1;
             // 
             // buttonProcurarCliente
             // 
@@ -196,7 +196,7 @@
             this.textBoxPedidosEndereco.Location = new System.Drawing.Point(134, 216);
             this.textBoxPedidosEndereco.Name = "textBoxPedidosEndereco";
             this.textBoxPedidosEndereco.Size = new System.Drawing.Size(247, 20);
-            this.textBoxPedidosEndereco.TabIndex = 37;
+            this.textBoxPedidosEndereco.TabIndex = 2;
             // 
             // label7
             // 
@@ -212,7 +212,7 @@
             this.textBoxPedidosTaxaEntrega.Location = new System.Drawing.Point(134, 245);
             this.textBoxPedidosTaxaEntrega.Name = "textBoxPedidosTaxaEntrega";
             this.textBoxPedidosTaxaEntrega.Size = new System.Drawing.Size(103, 20);
-            this.textBoxPedidosTaxaEntrega.TabIndex = 37;
+            this.textBoxPedidosTaxaEntrega.TabIndex = 3;
             // 
             // label8
             // 
@@ -339,7 +339,7 @@
             this.textBoxRemoveProduto.Location = new System.Drawing.Point(193, 529);
             this.textBoxRemoveProduto.Name = "textBoxRemoveProduto";
             this.textBoxRemoveProduto.Size = new System.Drawing.Size(43, 20);
-            this.textBoxRemoveProduto.TabIndex = 44;
+            this.textBoxRemoveProduto.TabIndex = 4;
             // 
             // PedidosForm
             // 

@@ -39,14 +39,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxCpf = new System.Windows.Forms.TextBox();
             this.label_data_nascimento = new System.Windows.Forms.Label();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label_cpf = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label_nome = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -82,7 +82,7 @@
             this.buttonExcluirCliente.Location = new System.Drawing.Point(442, 259);
             this.buttonExcluirCliente.Name = "buttonExcluirCliente";
             this.buttonExcluirCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonExcluirCliente.TabIndex = 4;
+            this.buttonExcluirCliente.TabIndex = 8;
             this.buttonExcluirCliente.Text = "Excluir";
             this.buttonExcluirCliente.UseVisualStyleBackColor = true;
             this.buttonExcluirCliente.Click += new System.EventHandler(this.buttonExcluirCliente_Click);
@@ -92,7 +92,7 @@
             this.buttonEditarCliente.Location = new System.Drawing.Point(342, 259);
             this.buttonEditarCliente.Name = "buttonEditarCliente";
             this.buttonEditarCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonEditarCliente.TabIndex = 4;
+            this.buttonEditarCliente.TabIndex = 7;
             this.buttonEditarCliente.Text = "Editar";
             this.buttonEditarCliente.UseVisualStyleBackColor = true;
             this.buttonEditarCliente.Click += new System.EventHandler(this.buttonEditarCliente_Click);
@@ -102,7 +102,7 @@
             this.buttonNovoCliente.Location = new System.Drawing.Point(237, 259);
             this.buttonNovoCliente.Name = "buttonNovoCliente";
             this.buttonNovoCliente.Size = new System.Drawing.Size(75, 23);
-            this.buttonNovoCliente.TabIndex = 4;
+            this.buttonNovoCliente.TabIndex = 6;
             this.buttonNovoCliente.Text = "Novo";
             this.buttonNovoCliente.UseVisualStyleBackColor = true;
             this.buttonNovoCliente.Click += new System.EventHandler(this.buttonNovoCliente_Click);
@@ -119,14 +119,14 @@
             this.textBoxEndereco.Location = new System.Drawing.Point(205, 212);
             this.textBoxEndereco.Name = "textBoxEndereco";
             this.textBoxEndereco.Size = new System.Drawing.Size(142, 20);
-            this.textBoxEndereco.TabIndex = 3;
+            this.textBoxEndereco.TabIndex = 5;
             // 
             // textBoxDataNascimento
             // 
             this.textBoxDataNascimento.Location = new System.Drawing.Point(205, 186);
             this.textBoxDataNascimento.Name = "textBoxDataNascimento";
             this.textBoxDataNascimento.Size = new System.Drawing.Size(142, 20);
-            this.textBoxDataNascimento.TabIndex = 3;
+            this.textBoxDataNascimento.TabIndex = 4;
             // 
             // label2
             // 
@@ -151,7 +151,7 @@
             this.textBoxCpf.Location = new System.Drawing.Point(205, 134);
             this.textBoxCpf.Name = "textBoxCpf";
             this.textBoxCpf.Size = new System.Drawing.Size(142, 20);
-            this.textBoxCpf.TabIndex = 3;
+            this.textBoxCpf.TabIndex = 2;
             // 
             // label_data_nascimento
             // 
@@ -162,12 +162,20 @@
             this.label_data_nascimento.TabIndex = 2;
             this.label_data_nascimento.Text = "Data de nascimento:";
             // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(205, 82);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.ReadOnly = true;
+            this.textBoxId.Size = new System.Drawing.Size(44, 20);
+            this.textBoxId.TabIndex = 3;
+            // 
             // textBoxNome
             // 
             this.textBoxNome.Location = new System.Drawing.Point(205, 108);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(249, 20);
-            this.textBoxNome.TabIndex = 3;
+            this.textBoxNome.TabIndex = 1;
             // 
             // label_cpf
             // 
@@ -177,6 +185,15 @@
             this.label_cpf.Size = new System.Drawing.Size(30, 13);
             this.label_cpf.TabIndex = 2;
             this.label_cpf.Text = "CPF:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(179, 85);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "id:";
             // 
             // label_nome
             // 
@@ -218,23 +235,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Gerenciador de Clientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(179, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "id:";
-            // 
-            // textBoxId
-            // 
-            this.textBoxId.Location = new System.Drawing.Point(205, 82);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.ReadOnly = true;
-            this.textBoxId.Size = new System.Drawing.Size(44, 20);
-            this.textBoxId.TabIndex = 3;
             // 
             // ClientesForm
             // 
