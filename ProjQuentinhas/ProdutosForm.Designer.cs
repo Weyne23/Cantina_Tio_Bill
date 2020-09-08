@@ -193,6 +193,7 @@
             this.Controls.Add(this.label_nome);
             this.Controls.Add(this.dataGridView2);
             this.Name = "ProdutosForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produtos";
             this.Load += new System.EventHandler(this.ProdutosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

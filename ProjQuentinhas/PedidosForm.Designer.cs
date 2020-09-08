@@ -58,6 +58,9 @@
             this.textBoxPedidosValor = new System.Windows.Forms.TextBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.buttonPedidosAdicionar = new System.Windows.Forms.Button();
+            this.buttonPedidosRemover = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxRemoveProduto = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCliente)).BeginInit();
@@ -158,6 +161,7 @@
             // 
             this.textBoxPedidosNome.Location = new System.Drawing.Point(134, 165);
             this.textBoxPedidosNome.Name = "textBoxPedidosNome";
+            this.textBoxPedidosNome.ReadOnly = true;
             this.textBoxPedidosNome.Size = new System.Drawing.Size(215, 20);
             this.textBoxPedidosNome.TabIndex = 37;
             // 
@@ -174,6 +178,7 @@
             // 
             this.textBoxPedidosContato.Location = new System.Drawing.Point(134, 191);
             this.textBoxPedidosContato.Name = "textBoxPedidosContato";
+            this.textBoxPedidosContato.ReadOnly = true;
             this.textBoxPedidosContato.Size = new System.Drawing.Size(134, 20);
             this.textBoxPedidosContato.TabIndex = 37;
             // 
@@ -257,24 +262,26 @@
             // 
             // textBoxPedidosProduto
             // 
-            this.textBoxPedidosProduto.Location = new System.Drawing.Point(464, 528);
+            this.textBoxPedidosProduto.Location = new System.Drawing.Point(468, 524);
             this.textBoxPedidosProduto.Name = "textBoxPedidosProduto";
+            this.textBoxPedidosProduto.ReadOnly = true;
             this.textBoxPedidosProduto.Size = new System.Drawing.Size(82, 20);
             this.textBoxPedidosProduto.TabIndex = 37;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(411, 531);
+            this.label10.Location = new System.Drawing.Point(415, 527);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 13);
             this.label10.TabIndex = 36;
             this.label10.Text = "Produto:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(559, 531);
+            this.label11.Location = new System.Drawing.Point(563, 527);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 36;
@@ -282,8 +289,9 @@
             // 
             // textBoxPedidosValor
             // 
-            this.textBoxPedidosValor.Location = new System.Drawing.Point(599, 528);
+            this.textBoxPedidosValor.Location = new System.Drawing.Point(603, 524);
             this.textBoxPedidosValor.Name = "textBoxPedidosValor";
+            this.textBoxPedidosValor.ReadOnly = true;
             this.textBoxPedidosValor.Size = new System.Drawing.Size(82, 20);
             this.textBoxPedidosValor.TabIndex = 37;
             // 
@@ -298,7 +306,7 @@
             // 
             // buttonPedidosAdicionar
             // 
-            this.buttonPedidosAdicionar.Location = new System.Drawing.Point(699, 525);
+            this.buttonPedidosAdicionar.Location = new System.Drawing.Point(691, 522);
             this.buttonPedidosAdicionar.Name = "buttonPedidosAdicionar";
             this.buttonPedidosAdicionar.Size = new System.Drawing.Size(75, 23);
             this.buttonPedidosAdicionar.TabIndex = 42;
@@ -306,11 +314,40 @@
             this.buttonPedidosAdicionar.UseVisualStyleBackColor = true;
             this.buttonPedidosAdicionar.Click += new System.EventHandler(this.buttonPedidosAdicionar_Click);
             // 
+            // buttonPedidosRemover
+            // 
+            this.buttonPedidosRemover.Location = new System.Drawing.Point(251, 527);
+            this.buttonPedidosRemover.Name = "buttonPedidosRemover";
+            this.buttonPedidosRemover.Size = new System.Drawing.Size(75, 23);
+            this.buttonPedidosRemover.TabIndex = 43;
+            this.buttonPedidosRemover.Text = "Remover";
+            this.buttonPedidosRemover.UseVisualStyleBackColor = true;
+            this.buttonPedidosRemover.Click += new System.EventHandler(this.buttonPedidosRemover_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(52, 532);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(135, 13);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "Digite o código do produto:";
+            this.label12.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // textBoxRemoveProduto
+            // 
+            this.textBoxRemoveProduto.Location = new System.Drawing.Point(193, 529);
+            this.textBoxRemoveProduto.Name = "textBoxRemoveProduto";
+            this.textBoxRemoveProduto.Size = new System.Drawing.Size(43, 20);
+            this.textBoxRemoveProduto.TabIndex = 44;
+            // 
             // PedidosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 598);
+            this.Controls.Add(this.textBoxRemoveProduto);
+            this.Controls.Add(this.buttonPedidosRemover);
             this.Controls.Add(this.buttonPedidosAdicionar);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.dataGridViewProdutos);
@@ -321,6 +358,7 @@
             this.Controls.Add(this.textBoxPedidosTaxaEntrega);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxPedidosEndereco);
@@ -335,6 +373,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "PedidosForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedidos";
             this.Load += new System.EventHandler(this.PedidosForm_Load);
             this.panel2.ResumeLayout(false);
@@ -380,5 +419,8 @@
         private System.Windows.Forms.TextBox textBoxPedidosValor;
         private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Button buttonPedidosAdicionar;
+        private System.Windows.Forms.Button buttonPedidosRemover;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxRemoveProduto;
     }
 }

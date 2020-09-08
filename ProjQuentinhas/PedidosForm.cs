@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace ProjQuentinhas
 
         Cliente cliente = new Cliente();
         Produto produto = new Produto();
-        List<Produto> listasProdutos = new List<Produto>();
+        Pedidos pedidos = new Pedidos();
 
         public PedidosForm()
         {
@@ -33,13 +34,9 @@ namespace ProjQuentinhas
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            
+        {            
             textBoxPedidosNome.Text = dataGridViewCliente.CurrentRow.Cells[1].Value.ToString();
             textBoxPedidosContato.Text = dataGridViewCliente.CurrentRow.Cells[3].Value.ToString();
-
-
         }
 
         private void buttonProcurarCliente_Click(object sender, EventArgs e)
@@ -48,8 +45,6 @@ namespace ProjQuentinhas
             dataGridViewCliente.DataSource = cliente.listarClientesPorNome(nome);
 
         }
-
-        
 
         private void dataGridViewProdutos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -60,15 +55,36 @@ namespace ProjQuentinhas
         private void buttonPedidosAdicionar_Click(object sender, EventArgs e)
         {
             string nome = textBoxPedidosProduto.Text;
-            double valor = double.Parse(textBoxPedidosValor.Text, CultureInfo.InvariantCulture);
-            listasProdutos.Add(new Produto(nome, valor));
+            string taxaEntrega = textBoxPedidosTaxaEntrega.Text;
+            string valor = textBoxPedidosValor.Text;
 
-            string s = "";
-            foreach (Produto p in listasProdutos)
+            if (nome.Trim().Equals("") || taxaEntrega.Trim().Equals(""))
             {
-                s += p.ToString() + "\r\n";
+                MessageBox.Show("Preencha todos os campos", "Campos vazio", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            textBoxResult.Text = s;
+            else
+            {
+                pedidos.Taxa_entrega = double.Parse(taxaEntrega, CultureInfo.InvariantCulture);
+                pedidos.addProduto(new Produto(nome, double.Parse(textBoxPedidosValor.Text, CultureInfo.InvariantCulture)));
+                
+
+                textBoxResult.Text = pedidos.imprimeProdutos();
+            }
+              
+        }
+
+        private void buttonPedidosRemover_Click(object sender, EventArgs e)
+        {
+            int cod = int.Parse(textBoxRemoveProduto.Text);
+            pedidos.removeProduto(cod);
+
+
+            textBoxResult.Text = pedidos.imprimeProdutos();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
